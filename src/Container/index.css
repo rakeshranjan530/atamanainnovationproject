@@ -22,7 +22,7 @@ div.buttonContainer{
     margin-bottom: 1em;
 }
 .activeBTN{
-    background-color: #0000FF !important;
+    background-color: #007bff !important;
     color: white !important;
 }
 @media only screen and (min-device-width: 350px) and (max-device-width: 768px) {
