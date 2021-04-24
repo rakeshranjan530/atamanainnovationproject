@@ -3,7 +3,7 @@ const JokeContainer =({joke,isJokeLoad,handleNewJoke,categories,newJoke})=>{
         <div className="wrapper">
             <div className="jokebox">
                 <h5 style={{textAlign:"center"}}>Selected Category : {categories}</h5>
-               <div className="jokecontainer bg-primary text-center p-4">
+               <div className="jokecontainer bg-primary text-center text-white p-4">
                 {
                        isJokeLoad ? (<div>Loading Joke...</div>) : (
                             <h4>{joke}</h4>
@@ -13,7 +13,7 @@ const JokeContainer =({joke,isJokeLoad,handleNewJoke,categories,newJoke})=>{
                 {
                     newJoke && (
                         <div>
-                            <span style={{color:"#007bff",marginTop:"15px",cursor:"pointer"}} onClick={handleNewJoke} >New Joke</span>
+                            <label style={{color:"#007bff",marginTop:"15px",cursor:"pointer"}} onClick={handleNewJoke} >New Joke</label>
                         </div>
                     )
                 }

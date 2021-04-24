@@ -9,7 +9,7 @@ const ButtonContainer =({buttonList,handleOnclick,btnName,isbtnListLoad})=>{
                             buttonList?.map((btnLabel)=>{
                                return(
                                     <label 
-                                        className='btn'
+                                        className={`${btnName === btnLabel  && 'activeBTN'} btn`}
                                         key={btnLabel}
                                         onClick={handleOnclick}
                                     >
